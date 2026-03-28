@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { CustomCursor } from '@/components/ui/CustomCursor'
 
 interface SiteLayoutProps {
     children: ReactNode
@@ -11,6 +12,7 @@ export default async function SiteLayout({ children, params }: SiteLayoutProps) 
     const { locale } = await params
     return (
         <>
+            <CustomCursor />
             <Navbar locale={locale} />
             {children}
             <Footer locale={locale} />

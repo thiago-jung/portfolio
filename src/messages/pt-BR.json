@@ -11,7 +11,10 @@
   "hero": {
     "boot": "INICIALIZANDO SISTEMA",
     "badge": "DISPONÍVEL PARA PROJETOS",
-    "headline": ["Engenheiro que", "entrega resultado."],
+    "headline": [
+      "Engenheiro que",
+      "entrega resultado."
+    ],
     "subheadline": "Sites que vendem. Dados que decidem. Sistemas que escalam. Para empresas que levam presença digital a sério.",
     "cta": {
       "primary": "Ver trabalhos",
@@ -19,9 +22,21 @@
     },
     "scroll": "SCROLL PARA EXPLORAR",
     "metrics": [
-      { "value": "847", "unit": "%", "label": "Melhoria de Performance" },
-      { "value": "12",  "unit": "+", "label": "Empresas Transformadas"  },
-      { "value": "98",  "unit": "",  "label": "Lighthouse Score Médio"  }
+      {
+        "value": "97",
+        "unit": "pts",
+        "label": "Lighthouse Score"
+      },
+      {
+        "value": "5.8",
+        "unit": "x",
+        "label": "LCP mais rápido"
+      },
+      {
+        "value": "5",
+        "unit": "+",
+        "label": "Projetos Entregues"
+      }
     ]
   },
   "services": {
@@ -34,28 +49,44 @@
         "tag": "WEB",
         "title": "Sites & Sistemas Next.js",
         "description": "Arquitetura moderna, performance medida, identidade visual que converte. De landing pages a plataformas SaaS completas.",
-        "metrics": ["Lighthouse ≥ 95", "LCP < 1.8s", "SEO técnico completo"]
+        "metrics": [
+          "Lighthouse ≥ 95",
+          "LCP < 1.8s",
+          "SEO técnico completo"
+        ]
       },
       {
         "id": "data",
         "tag": "DATA",
         "title": "Data Science & ML",
         "description": "Pipelines de dados, modelos preditivos e dashboards executivos. Transforma dados brutos em decisões de negócio.",
-        "metrics": ["Python · Pandas · Sklearn", "Visualizações interativas", "APIs de predição"]
+        "metrics": [
+          "Python · Pandas · Sklearn",
+          "Visualizações interativas",
+          "APIs de predição"
+        ]
       },
       {
         "id": "fullstack",
         "tag": "FULL-STACK",
         "title": "Sistemas Web Completos",
         "description": "Backend robusto, frontend preciso, infraestrutura que não cai. Autenticação, pagamentos, real-time, tudo integrado.",
-        "metrics": ["Node.js · PostgreSQL", "Auth & Pagamentos", "Arquitetura escalável"]
+        "metrics": [
+          "Node.js · PostgreSQL",
+          "Auth & Pagamentos",
+          "Arquitetura escalável"
+        ]
       },
       {
         "id": "games",
         "tag": "GAMES",
         "title": "Game Development",
         "description": "Jogos multiplayer, mecânicas personalizadas e arquitetura de servidor de jogo. Unity, C# e backends de alta performance.",
-        "metrics": ["Unity · C#", "Servidor multiplayer", "Netcode & sincronização"]
+        "metrics": [
+          "Unity · C#",
+          "Servidor multiplayer",
+          "Netcode & sincronização"
+        ]
       }
     ]
   },
@@ -69,11 +100,31 @@
         "title": "INCOCIL®",
         "description": "Migração completa de WordPress para Next.js para fabricante de cilindros hidráulicos. Presença internacional para Hannover Messe 2026.",
         "metrics": [
-          { "label": "Performance", "before": "38", "after": "97", "unit": "pts" },
-          { "label": "LCP",         "before": "8.2", "after": "1.4", "unit": "s"  },
-          { "label": "SEO",         "before": "61",  "after": "98",  "unit": "pts"}
+          {
+            "label": "Performance",
+            "before": "38",
+            "after": "97",
+            "unit": "pts"
+          },
+          {
+            "label": "LCP",
+            "before": "8.2",
+            "after": "1.4",
+            "unit": "s"
+          },
+          {
+            "label": "SEO",
+            "before": "61",
+            "after": "98",
+            "unit": "pts"
+          }
         ],
-        "tags": ["Next.js 15", "TypeScript", "i18n", "Puppeteer"],
+        "tags": [
+          "Next.js 15",
+          "TypeScript",
+          "i18n",
+          "Puppeteer"
+        ],
         "status": "COMPLETED",
         "year": "2025"
       }
@@ -86,11 +137,40 @@
     "bio": "Analista de Data Science Jr. durante o dia. Engenheiro de software full-stack nas horas vagas. Desenvolvedor de jogos quando ninguém está olhando. O que une tudo isso: obsessão por sistemas bem construídos — seja um modelo de ML, uma arquitetura Next.js ou o netcode de um jogo multiplayer.",
     "philosophy": "Não entrego código. Entrego a diferença entre onde sua empresa está e onde ela precisa estar.",
     "skills": {
-      "web":      ["Next.js 15", "React", "TypeScript", "Tailwind", "Framer Motion"],
-      "data":     ["Python", "Pandas", "Scikit-learn", "SQL", "Visualização"],
-      "backend":  ["Node.js", "PostgreSQL", "Prisma", "Supabase", "Redis"],
-      "games":    ["Unity", "C#", "Netcode", "Servidor multiplayer"],
-      "tools":    ["Vercel", "Docker", "Git", "Figma", "Puppeteer"]
+      "web": [
+        "Next.js 15",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Framer Motion"
+      ],
+      "data": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "SQL",
+        "Visualização"
+      ],
+      "backend": [
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "Supabase",
+        "Redis"
+      ],
+      "games": [
+        "Unity",
+        "C#",
+        "Netcode",
+        "Servidor multiplayer"
+      ],
+      "tools": [
+        "Vercel",
+        "Docker",
+        "Git",
+        "Figma",
+        "Puppeteer"
+      ]
     }
   },
   "contact": {
@@ -98,15 +178,30 @@
     "headline": "Pronto para iniciar?",
     "subheadline": "Descreva seu projeto. Respondo em até 24 horas com uma análise inicial — sem custo, sem compromisso.",
     "form": {
-      "name":        { "label": "Nome",         "placeholder": "Seu nome completo"         },
-      "company":     { "label": "Empresa",       "placeholder": "Nome da empresa"           },
-      "email":       { "label": "Email",         "placeholder": "seu@email.com"             },
-      "budget":      { "label": "Orçamento",     "placeholder": "Ex: R$ 5.000 – R$ 15.000" },
-      "message":     { "label": "Projeto",       "placeholder": "Descreva o que você precisa construir..." },
-      "submit":      "Enviar Briefing",
-      "submitting":  "Enviando...",
-      "success":     "Mensagem recebida! Retorno em até 24h.",
-      "error":       "Erro ao enviar. Tente novamente ou email direto."
+      "name": {
+        "label": "Nome",
+        "placeholder": "Seu nome completo"
+      },
+      "company": {
+        "label": "Empresa",
+        "placeholder": "Nome da empresa"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "seu@email.com"
+      },
+      "budget": {
+        "label": "Orçamento",
+        "placeholder": "Ex: R$ 5.000 – R$ 15.000"
+      },
+      "message": {
+        "label": "Projeto",
+        "placeholder": "Descreva o que você precisa construir..."
+      },
+      "submit": "Enviar Briefing",
+      "submitting": "Enviando...",
+      "success": "Mensagem recebida! Retorno em até 24h.",
+      "error": "Erro ao enviar. Tente novamente ou email direto."
     },
     "availability": "STATUS: DISPONÍVEL PARA PROJETOS",
     "microcopy": "Sem contrato de fidelidade. Sem retainer obrigatório."
@@ -115,11 +210,11 @@
     "label": "CARTÃO DIGITAL",
     "headline": "Compartilhe seu contato.",
     "actions": {
-      "flip":        "Virar cartão",
-      "download":    "Salvar contato (.vcf)",
-      "share":       "Compartilhar",
-      "copyEmail":   "Copiar email",
-      "print":       "Imprimir cartão físico",
+      "flip": "Virar cartão",
+      "download": "Salvar contato (.vcf)",
+      "share": "Compartilhar",
+      "copyEmail": "Copiar email",
+      "print": "Imprimir cartão físico",
       "qrInstructions": "Aponte a câmera para adicionar o contato"
     },
     "front": {
@@ -133,45 +228,64 @@
     "tagline": "Engenharia com intenção.",
     "links": {
       "privacy": "Política de Privacidade",
-      "terms":   "Termos de Uso"
+      "terms": "Termos de Uso"
     },
     "copyright": "Thiago. Todos os direitos reservados."
   },
   "metadata": {
     "home": {
-      "title":       "Thiago — Full-Stack, Data Science & Game Dev",
+      "title": "Thiago — Full-Stack, Data Science & Game Dev",
       "description": "Engenheiro que transforma presença digital de empresas. Next.js, Python, Unity. Porto Alegre, Brasil.",
-      "ogTitle":     "Thiago — Engenheiro que entrega resultado.",
-      "ogDescription":"Sites que vendem. Dados que decidem. Sistemas que escalam."
+      "ogTitle": "Thiago — Engenheiro que entrega resultado.",
+      "ogDescription": "Sites que vendem. Dados que decidem. Sistemas que escalam."
     },
     "about": {
-      "title":       "Sobre — Thiago",
+      "title": "Sobre — Thiago",
       "description": "20 anos, Porto Alegre. Full-stack, data science e game dev. Obsessão por sistemas bem construídos.",
-      "ogTitle":     "Sobre Thiago",
-      "ogDescription":"A história por trás dos projetos."
+      "ogTitle": "Sobre Thiago",
+      "ogDescription": "A história por trás dos projetos."
+    },
+    "services": {
+      "title": "Serviços — Thiago",
+      "description": "Web, Data Science e Game Dev. Três especialidades, um padrão de entrega. Porto Alegre, Brasil.",
+      "ogTitle": "Serviços — Thiago",
+      "ogDescription": "Sites que vendem. Dados que decidem. Jogos que escalam."
+    },
+    "work": {
+      "title": "Trabalhos — Thiago",
+      "description": "Portfólio de projetos com impacto mensurável. INCOCIL® e outros. Porto Alegre, Brasil.",
+      "ogTitle": "Trabalhos — Thiago",
+      "ogDescription": "Cada projeto, um delta mensurável."
     },
     "contact": {
-      "title":       "Contato — Thiago",
+      "title": "Contato — Thiago",
       "description": "Inicie seu projeto. Resposta em até 24 horas.",
-      "ogTitle":     "Fale com Thiago",
-      "ogDescription":"Descreva seu projeto. Resposta em até 24 horas."
+      "ogTitle": "Fale com Thiago",
+      "ogDescription": "Descreva seu projeto. Resposta em até 24 horas."
     },
     "card": {
-      "title":       "Cartão Digital — Thiago",
+      "title": "Cartão Digital — Thiago",
       "description": "Cartão de visita digital de Thiago. Salve o contato diretamente no seu celular.",
-      "ogTitle":     "Cartão Digital — Thiago",
-      "ogDescription":"Engenheiro Full-Stack, Data Science & Game Dev. Porto Alegre, Brasil."
+      "ogTitle": "Cartão Digital — Thiago",
+      "ogDescription": "Engenheiro Full-Stack, Data Science & Game Dev. Porto Alegre, Brasil."
     }
   },
   "404": {
-    "code":    "404",
-    "label":   "MÓDULO NÃO ENCONTRADO",
+    "code": "404",
+    "label": "MÓDULO NÃO ENCONTRADO",
     "message": "Esta rota não existe no sistema.",
-    "cta":     "Voltar ao início"
+    "cta": "Voltar ao início"
   },
   "error": {
-    "label":   "ERRO DO SISTEMA",
+    "label": "ERRO DO SISTEMA",
     "message": "Algo deu errado. O erro foi registrado.",
-    "cta":     "Tentar novamente"
+    "cta": "Tentar novamente"
+  },
+  "cta": {
+    "badge": "PRÓXIMO PASSO",
+    "headline": "Seu projeto merece engenharia de verdade.",
+    "subheadline": "Descreva o que precisa construir. Analiso o problema e respondo com uma proposta clara — sem custo, sem enrolação.",
+    "cta": "Iniciar projeto",
+    "microcopy": "Sem contrato de fidelidade. Sem retainer obrigatório. Cancele quando quiser."
   }
 }
