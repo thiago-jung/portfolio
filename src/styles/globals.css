@@ -18,9 +18,12 @@
     --font-display: var(--font-syne);
     --font-body: var(--font-geist-mono);
     --font-accent: var(--font-syne-mono);
-    --spacing-section: clamp(5rem, 12vw, 10rem);
+    /* FIX: Increased section spacing for more breathing room between sections */
+    --spacing-section: clamp(6rem, 14vw, 12rem);
     --spacing-container: 1280px;
-    --spacing-gutter: clamp(1rem, 4vw, 2rem);
+    --spacing-gutter: clamp(1.25rem, 5vw, 2.5rem);
+    /* NEW: Navbar height token — single source of truth */
+    --navbar-height: 72px;
 }
 
 /* ─── Reset & Base ───────────────────────────────────────────────────────── */
@@ -40,6 +43,7 @@ body {
     color: var(--color-text-primary);
     font-family: var(--font-body), 'Courier New', monospace;
     overflow-x: hidden;
+    margin: 0;
 }
 
 /* ─── Skip link (acessibilidade) ────────────────────────────────────────── */
@@ -80,20 +84,26 @@ body {
     font-family: var(--font-accent);
 }
 
+/* FIX: line-height 0.95 → 1.08
+   The old value caused lines to physically overlap at large font sizes.
+   1.08 preserves the editorial tightness without collision. */
 .text-hero {
-    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-size: clamp(2.75rem, 7vw, 6rem);
     font-family: var(--font-display);
     font-weight: 800;
     letter-spacing: -0.04em;
-    line-height: 0.95;
+    line-height: 1.08;
 }
 
+/* FIX: line-height 1 → 1.12
+   Same issue as .text-hero but less severe. At clamp(2rem, 5vw, 3.5rem),
+   a line-height of 1.0 causes descenders to touch ascenders on the next line. */
 .text-display {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.75rem, 4.5vw, 3rem);
     font-family: var(--font-display);
     font-weight: 800;
     letter-spacing: -0.03em;
-    line-height: 1;
+    line-height: 1.12;
 }
 
 .text-label {
@@ -105,10 +115,6 @@ body {
 }
 
 /* ─── Hover utilities para Server Components ────────────────────────────── */
-/* DECISÃO: Server Components não podem ter onMouseEnter/Leave.
-   Estas classes implementam o mesmo efeito via CSS puro.
-   Uso: className="service-card" em vez de onMouseEnter JS handler. */
-
 .service-card {
     background: var(--color-base);
     transition: background 0.15s ease;
@@ -118,7 +124,6 @@ body {
         background: var(--color-surface);
     }
 
-/* Back link em páginas de detalhe */
 .back-link {
     color: var(--color-text-tertiary);
     transition: color 0.15s ease;
@@ -129,7 +134,6 @@ body {
         color: var(--color-accent);
     }
 
-/* Link genérico com hover em accent — para use em Server Components */
 .link-accent {
     color: var(--color-text-secondary);
     transition: color 0.15s ease;
@@ -140,7 +144,6 @@ body {
         color: var(--color-accent);
     }
 
-/* Card com glow no hover — para Server Components */
 .card-hover {
     border-color: var(--color-border);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -203,7 +206,7 @@ body {
         width: 85mm;
         height: 54mm;
         margin: 0;
-        padding: 3mm; /* sangria */
+        padding: 3mm;
         page-break-inside: avoid;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
